@@ -1,4 +1,4 @@
-title: Your Name
+title: Dion Thomas
 description: My personal website and blog
 theme: minima
 
@@ -6,6 +6,3 @@ theme: minima
 show_excerpts: true
 
 # Navigation (this is important)
-header_pages:
-  - about.md
-  - blog.md

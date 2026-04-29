@@ -1,0 +1,11 @@
+title: Your Name
+description: My personal website and blog
+theme: minima
+
+# This enables blog posts on the homepage if you want later
+show_excerpts: true
+
+# Navigation (this is important)
+header_pages:
+  - about.md
+  - blog.md

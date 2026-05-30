@@ -3,19 +3,16 @@ layout: home
 title: Home
 ---
 
-## About
+## Hello 👋
 
-I am building this site as a home for notes, projects, and longer-form writing.
-
-The shape is intentionally simple: a homepage, a few useful pages, and a blog that can grow over time.
+I am an MRI physicist living in Wellington, New Zealand and working at Wellumio.
 
 ## Featured
 
-- [About]({{ "/about/" | relative_url }}) - a short introduction.
-- [Now]({{ "/now/" | relative_url }}) - what I am focused on at the moment.
-- [Blog]({{ "/blog/" | relative_url }}) - writing and notes.
+- [About]({{ "/about/" | relative_url }}) - About me
+- [Blog]({{ "/blog/" | relative_url }}) - I am collating my writing and publications here, please reach out if you have questions!
 
-## Recent Posts
+## Writings and academic publications
 
 {% if site.posts.size > 0 %}
   {% for post in site.posts limit: 3 %}

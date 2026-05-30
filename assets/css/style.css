@@ -63,7 +63,20 @@ a:hover {
   position: sticky;
   top: 4.25rem;
   align-self: start;
+  max-width: 15rem;
   text-align: center;
+}
+
+.site-sidebar img,
+.profile-photo {
+  display: block;
+  width: 7.25rem;
+  max-width: 100%;
+  aspect-ratio: 1;
+  height: auto;
+  margin: 0 auto 1.25rem;
+  border-radius: 999px;
+  object-fit: cover;
 }
 
 .profile-mark {
@@ -248,12 +261,15 @@ a:hover {
 
   .site-sidebar {
     position: static;
+    max-width: none;
     border-bottom: 1px solid var(--line);
     margin-bottom: 1.75rem;
     padding-bottom: 1.5rem;
   }
 
-  .profile-mark {
+  .profile-mark,
+  .site-sidebar img,
+  .profile-photo {
     width: 5.75rem;
     height: 5.75rem;
     font-size: 1.55rem;
@@ -262,13 +278,4 @@ a:hover {
   .content h1 {
     font-size: 1.8rem;
   }
-}
-
-.profile-photo {
-  display: block;
-  width: 7.25rem;
-  height: 7.25rem;
-  margin: 0 auto 1.25rem;
-  border-radius: 999px;
-  object-fit: cover;
 }

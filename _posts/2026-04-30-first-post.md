@@ -1,12 +1,12 @@
 ---
-layout: post
-title: "My First Post"
+title: "First Post"
 date: 2026-04-30
+excerpt: "A placeholder post to prove the blog index and post layout are working."
 ---
 
-This is my first blog post 🎉
+This is the first placeholder post.
 
-Write in Markdown—it's super simple.
+Write posts in Markdown. You can use headings, lists, links, code snippets, and images.
 
 ## Example
 
@@ -14,4 +14,4 @@ Write in Markdown—it's super simple.
 - **Bold text**
 - `code`
 
-That’s it!
+That is it.

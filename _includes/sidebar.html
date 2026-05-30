@@ -1,0 +1,35 @@
+<aside class="site-sidebar" aria-label="Site sidebar">
+  <div class="profile-mark" aria-hidden="true">DT</div>
+  <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  {% if site.position %}
+    <p class="site-position">{{ site.position }}</p>
+  {% endif %}
+  {% if site.description %}
+    <p class="site-description">{{ site.description }}</p>
+  {% endif %}
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/now/' | relative_url }}">Now</a>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+  </nav>
+
+  <div class="social-links" aria-label="Social links">
+    {% if site.github_link %}
+      <a href="{{ site.github_link }}">GitHub</a>
+    {% endif %}
+    {% if site.linkedin %}
+      <a href="{{ site.linkedin }}">LinkedIn</a>
+    {% endif %}
+    {% if site.email %}
+      <a href="mailto:{{ site.email }}">Email</a>
+    {% endif %}
+  </div>
+
+  {% if site.enable_footnote %}
+    <p class="site-footnote">
+      Built with Jekyll, adapted from the Minimal Light direction.
+    </p>
+  {% endif %}
+</aside>

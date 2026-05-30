@@ -1,18 +1,18 @@
 ---
-layout: page
 title: About
 permalink: /about/
 ---
 
-## About Me
+# About
 
-Write a short intro here.
+Write a concise intro here: who you are, what you do, and what you want this site to collect.
 
-- What you do
-- What you're interested in
-- Anything personal/professional
+## Interests
 
-You can also add links:
+- Software and technology
+- Projects worth documenting
+- Notes that are useful enough to keep
 
-- [GitHub](https://github.com/yourusername)
-- [LinkedIn](https://linkedin.com/in/yourname)
+## Elsewhere
+
+- [GitHub](https://github.com/diont17)

@@ -1,16 +1,22 @@
 ---
-layout: page
 title: Blog
 permalink: /blog/
 ---
 
-## Blog Posts
+# Blog
 
-<ul>
+{% if site.posts.size > 0 %}
+  <ol class="post-list">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <small> — {{ post.date | date: "%b %-d, %Y" }}</small>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+      {% if post.excerpt %}
+        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+      {% endif %}
     </li>
   {% endfor %}
-</ul>
+  </ol>
+{% else %}
+No posts yet.
+{% endif %}

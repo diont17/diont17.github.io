@@ -1,8 +1,29 @@
 title: Dion Thomas
-description: My personal website and blog
-theme: minima
+position: Personal website and blog
+description: Personal homepage, notes, and projects by Dion Thomas.
+url: "https://dionthomas.nz"
+baseurl: ""
+lang: en-NZ
 
-# This enables blog posts on the homepage if you want later
+github_link: https://github.com/diont17
+linkedin:
+email:
+
+enable_footnote: true
 show_excerpts: true
 
-# Navigation (this is important)
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - README.md

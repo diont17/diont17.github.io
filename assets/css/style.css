@@ -1,0 +1,265 @@
+:root {
+  --bg: #ffffff;
+  --text: #24292f;
+  --muted: #667085;
+  --heading: #12395b;
+  --link: #0969da;
+  --line: #d8dee4;
+  --soft: #f6f8fa;
+  --mark-bg: #eaf3ff;
+  --mark-text: #12395b;
+  --measure: 43rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171923;
+    --text: #d7dce2;
+    --muted: #a5adba;
+    --heading: #68c7ff;
+    --link: #68c7ff;
+    --line: #303442;
+    --soft: #202431;
+    --mark-bg: #1f3548;
+    --mark-text: #b7e3ff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-shell {
+  display: grid;
+  grid-template-columns: 15rem minmax(0, var(--measure));
+  gap: 4.5rem;
+  width: min(100% - 2rem, 62rem);
+  margin: 0 auto;
+  padding: 4.25rem 0;
+}
+
+.site-sidebar {
+  position: sticky;
+  top: 4.25rem;
+  align-self: start;
+  text-align: center;
+}
+
+.profile-mark {
+  display: grid;
+  width: 7.25rem;
+  height: 7.25rem;
+  margin: 0 auto 1.25rem;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--mark-bg);
+  color: var(--mark-text);
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.site-title {
+  margin: 0 0 0.3rem;
+  color: var(--heading);
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.site-title a {
+  color: inherit;
+}
+
+.site-position {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.site-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.site-nav,
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem 0.8rem;
+  margin-top: 1.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.88rem;
+}
+
+.site-nav a,
+.social-links a {
+  color: var(--link);
+}
+
+.site-footnote {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.site-main {
+  min-width: 0;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  color: var(--heading);
+  line-height: 1.18;
+}
+
+.content h1 {
+  margin: 0 0 1.35rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.content h2 {
+  margin: 0 0 0.85rem;
+  padding-top: 0.15rem;
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.content h2:not(:first-child) {
+  margin-top: 2.2rem;
+}
+
+.content h3 {
+  margin: 1.6rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.content p,
+.content ul,
+.content ol {
+  margin: 0 0 1.15rem;
+}
+
+.content ul,
+.content ol {
+  padding-left: 1.25rem;
+}
+
+.content small {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+}
+
+.content code {
+  border-radius: 0.25rem;
+  background: var(--soft);
+  padding: 0.1rem 0.28rem;
+  font-family: Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+}
+
+.content pre {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--soft);
+  padding: 1rem;
+}
+
+.content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  border-top: 1px solid var(--line);
+  padding: 1rem 0;
+}
+
+.post-list li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.post-list a {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.post-list time,
+.post-meta,
+.eyebrow {
+  display: block;
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+}
+
+.post-list p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+}
+
+.post-meta {
+  margin: -0.75rem 0 1.75rem;
+}
+
+@media print, screen and (max-width: 780px) {
+  .site-shell {
+    display: block;
+    width: min(100% - 2rem, var(--measure));
+    padding: 2rem 0;
+  }
+
+  .site-sidebar {
+    position: static;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .profile-mark {
+    width: 5.75rem;
+    height: 5.75rem;
+    font-size: 1.55rem;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+}

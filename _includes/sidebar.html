@@ -1,5 +1,9 @@
 <aside class="site-sidebar" aria-label="Site sidebar">
-  <div class="profile-mark" aria-hidden="true">DT</div>
+  {% if site.avatar %}
+    <img class="profile-photo" src="{{ site.avatar | relative_url }}" alt="{{ site.title }}">
+  {% else %}
+    <div class="profile-mark" aria-hidden="true">DT</div>
+  {% endif %}
   <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
   {% if site.position %}
     <p class="site-position">{{ site.position }}</p>
@@ -11,7 +15,6 @@
   <nav class="site-nav" aria-label="Primary navigation">
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/about/' | relative_url }}">About</a>
-    <a href="{{ '/now/' | relative_url }}">Now</a>
     <a href="{{ '/blog/' | relative_url }}">Blog</a>
   </nav>
 

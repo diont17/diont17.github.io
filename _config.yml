@@ -6,8 +6,8 @@ baseurl: ""
 lang: en-NZ
 
 github_link: https://github.com/diont17
-linkedin:
-email:
+linkedin: https://www.linkedin.com/in/dion-thomas-352129203/
+email: dion (at) wellumio.com
 
 enable_footnote: true
 show_excerpts: true
@@ -27,3 +27,5 @@ defaults:
 
 exclude:
   - README.md
+
+avatar: /assets/img/profile.jpg

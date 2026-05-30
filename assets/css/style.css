@@ -263,3 +263,12 @@ a:hover {
     font-size: 1.8rem;
   }
 }
+
+.profile-photo {
+  display: block;
+  width: 7.25rem;
+  height: 7.25rem;
+  margin: 0 auto 1.25rem;
+  border-radius: 999px;
+  object-fit: cover;
+}
